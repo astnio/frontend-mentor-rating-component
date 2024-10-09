@@ -1,0 +1,6 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(217, 12%, 63%);
+  --clr-blue-600: hsl(213, 19%, 18%);
+  --clr-blue-800: hsl(216, 12%, 8%);
+}

@@ -11,10 +11,13 @@
 }
 
 :root {
-  --clr-white: hsl(0, 0%, 100%);
-  --clr-grey: hsl(217, 12%, 63%);
-  --clr-blue-600: hsl(213, 19%, 18%);
-  --clr-blue-800: hsl(216, 12%, 8%);
+  --clr-white: #ffffff;
+  --clr-grey: #959eac;
+  --clr-blue-600: #252d37;
+  --clr-blue-800: #121417;
+  --clr-orange: #fc7614;
+
+  font-size: 15px;
 }
 
 *,
@@ -33,6 +36,10 @@ body {
   align-items: center;
   justify-content: center;
 
+  font-family: 'Overpass', sans-serif;
+
+  background-color: var(--clr-blue-800);
+
   margin: 0;
 
   min-height: 100vh;
@@ -42,8 +49,16 @@ section {
   min-height: 416px;
   max-width: 412px;
 
+  border-radius: 30pt;
+
   padding: 2rem;
-  background-color: var(--clr-blue-600);
+
+  background: rgb(35, 42, 52);
+  background: radial-gradient(
+    circle,
+    rgba(35, 42, 52, 1) 0%,
+    rgba(24, 30, 39, 1) 100%
+  );
 }
 
 fieldset {
@@ -59,6 +74,27 @@ fieldset > button {
   grid-column: 1 / span 5;
 }
 
-button {
+button,
+.button {
   width: 100%;
+
+  background-color: var(--clr-orange);
+
+  min-height: 45px;
+
+  border: none;
+  border-radius: 22.5pt;
+
+  color: var(--clr-blue-800);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2ch;
+}
+
+.heading-large {
+  font-size: 28px;
+}
+
+.heading-medium {
+  font-size: 15px;
 }

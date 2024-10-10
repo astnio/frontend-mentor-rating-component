@@ -80,6 +80,13 @@ section {
   );
 }
 
+.section-thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 picture {
   display: flex;
   align-items: center;
@@ -257,7 +264,44 @@ button:active,
   margin-bottom: 0.6rem;
 }
 
+.thank-you-card-title {
+  margin-bottom: 1rem;
+  margin-top: 1.4rem;
+}
+
 /*** Images ***/
 .card-star-picture {
   margin-bottom: 1.8rem;
+}
+
+.picture-thank-you {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+/*** Chip ***/
+
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  background-color: var(--clr-blue-600);
+
+  border-radius: 22.5pt;
+
+  margin-block: 1rem;
+}
+
+.chip > p {
+  position: relative;
+  top: 0.15rem;
+  color: var(--clr-orange);
+  padding-block: 0.4rem;
+  padding-inline: 1.4rem;
+}
+
+.section-thank-you > p {
+  text-align: center;
 }

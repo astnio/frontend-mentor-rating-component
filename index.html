@@ -28,7 +28,7 @@
           is appreciated to help us improve our offering!
         </p>
         <fieldset>
-          <legend>Rating</legend>
+          <legend style="display: none">Rating</legend>
           <div class="radio">
             <input
               type="radio"
@@ -74,11 +74,16 @@
             <label for="rating-1">5</label>
           </div>
 
-          <button type="submit">Submit</button>
+          <button
+            id="btn-rating-submit"
+            class="button"
+            type="submit">
+            Submit
+          </button>
         </fieldset>
       </section>
 
-      <section>
+      <section style="display: none">
         <p>
           You selected <span>{rating}</span> out of 5 Thank you! We appreciate
           you taking the time to give a rating. If you ever need more support,

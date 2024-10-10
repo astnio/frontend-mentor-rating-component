@@ -30,6 +30,22 @@ html {
   color-scheme: dark;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: var(--clr-grey);
+  line-height: 24px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -64,6 +80,20 @@ section {
   );
 }
 
+picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+  background-color: var(--clr-blue-600);
+}
+
+/*** Fieldset ***/
+
 fieldset {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -80,6 +110,8 @@ fieldset > button {
   grid-column: 1 / span 5;
   margin-top: 2.4rem;
 }
+
+/*** Custom Radio Button ***/
 
 .radio {
   isolation: isolate;
@@ -171,6 +203,8 @@ label {
   background-color: var(--clr-orange);
 }
 
+/*** Button ***/
+
 button,
 .button {
   position: relative;
@@ -209,10 +243,21 @@ button:active,
   top: 2px;
 }
 
+/*** Text ***/
+
 .heading-large {
   font-size: 28px;
 }
 
 .heading-medium {
   font-size: 15px;
+}
+
+.card-title {
+  margin-bottom: 0.6rem;
+}
+
+/*** Images ***/
+.card-star-picture {
+  margin-bottom: 1.8rem;
 }

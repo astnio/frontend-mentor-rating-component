@@ -4,3 +4,20 @@
   --clr-blue-600: hsl(213, 19%, 18%);
   --clr-blue-800: hsl(216, 12%, 8%);
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+
+  min-height: 100vh;
+}

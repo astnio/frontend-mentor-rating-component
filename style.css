@@ -84,6 +84,7 @@ fieldset > button {
 .radio {
   isolation: isolate;
   position: relative;
+  top: 0;
 
   display: flex;
   align-items: center;
@@ -99,9 +100,9 @@ fieldset > button {
   font-weight: 700;
   font-size: 16px;
 
-  transition-property: background-color, color;
+  transition-property: background-color, color, top;
   transition-duration: 0.1s;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-out;
 }
 
 .radio::before {
@@ -118,7 +119,7 @@ fieldset > button {
 
   transition-property: background-color, color;
   transition-duration: 0.1s;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-out;
 }
 
 input[type='radio'] {
@@ -145,8 +146,16 @@ label {
   padding: 0;
 }
 
+.radio:has(input[type='radio']:checked) > label:hover {
+  cursor: default;
+}
+
 .radio:has(input[type='radio']:checked) {
   color: var(--clr-blue-800);
+}
+
+.radio:has(input[type='radio']:checked):hover {
+  top: 0;
 }
 
 .radio:has(input[type='radio']:checked)::before {
@@ -155,6 +164,7 @@ label {
 
 .radio:hover {
   color: var(--clr-blue-800);
+  top: -3px;
 }
 
 .radio:hover::before {
@@ -163,6 +173,9 @@ label {
 
 button,
 .button {
+  position: relative;
+  top: 0;
+
   width: 100%;
 
   background-color: var(--clr-orange);
@@ -176,6 +189,24 @@ button,
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2ch;
+
+  transition-property: background-color, color, top;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--clr-white);
+  cursor: pointer;
+  top: -3px;
+}
+
+button:active,
+.button:active {
+  background-color: var(--clr-grey);
+  cursor: pointer;
+  top: 2px;
 }
 
 .heading-large {

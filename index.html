@@ -25,87 +25,91 @@
   </head>
   <body>
     <main>
-      <section>
-        <picture class="card-star-picture">
-          <img
-            src="./assets/images/icon-star.svg"
-            alt="" />
-        </picture>
-        <h1 class="card-title heading-large">How did we do?</h1>
-        <p class="card-body">
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-        <fieldset>
-          <legend style="display: none">Rating</legend>
-          <div class="radio">
-            <input
-              type="radio"
-              name="rating"
-              id="rating-1"
-              value="1" />
-            <label for="rating-1">1</label>
-          </div>
+      <section class="section-rate">
+        <div class="card card-rate">
+          <picture class="card-star-picture">
+            <img
+              src="./assets/images/icon-star.svg"
+              alt="" />
+          </picture>
+          <h1 class="card-title heading-large">How did we do?</h1>
+          <p class="card-body">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <fieldset>
+            <legend style="display: none">Rating</legend>
+            <div class="radio">
+              <input
+                type="radio"
+                name="rating"
+                id="rating-1"
+                value="1" />
+              <label for="rating-1">1</label>
+            </div>
 
-          <div class="radio">
-            <input
-              type="radio"
-              name="rating"
-              id="rating-2"
-              value="2" />
-            <label for="rating-2">2</label>
-          </div>
+            <div class="radio">
+              <input
+                type="radio"
+                name="rating"
+                id="rating-2"
+                value="2" />
+              <label for="rating-2">2</label>
+            </div>
 
-          <div class="radio">
-            <input
-              type="radio"
-              name="rating"
-              id="rating-3"
-              value="3" />
-            <label for="rating-3">3</label>
-          </div>
+            <div class="radio">
+              <input
+                type="radio"
+                name="rating"
+                id="rating-3"
+                value="3" />
+              <label for="rating-3">3</label>
+            </div>
 
-          <div class="radio">
-            <input
-              type="radio"
-              name="rating"
-              id="rating-4"
-              value="4" />
-            <label for="rating-4">4</label>
-          </div>
+            <div class="radio">
+              <input
+                type="radio"
+                name="rating"
+                id="rating-4"
+                value="4" />
+              <label for="rating-4">4</label>
+            </div>
 
-          <div class="radio">
-            <input
-              type="radio"
-              name="rating"
-              id="rating-5"
-              value="5" />
-            <label for="rating-5">5</label>
-          </div>
+            <div class="radio">
+              <input
+                type="radio"
+                name="rating"
+                id="rating-5"
+                value="5" />
+              <label for="rating-5">5</label>
+            </div>
 
-          <button
-            id="btn-rating-submit"
-            class="button heading-medium"
-            type="submit">
-            Submit
-          </button>
-        </fieldset>
+            <button
+              id="btn-rating-submit"
+              class="button heading-medium"
+              type="submit">
+              Submit
+            </button>
+          </fieldset>
+        </div>
       </section>
 
       <section class="section-thank-you">
-        <picture class="picture-thank-you">
-          <img
-            src="./assets/images/illustration-thank-you.svg"
-            alt="" />
-        </picture>
-        <div class="chip">
-          <p>You selected <span id="rating-label">{n}</span> out of 5</p>
+        <div class="card card-thank-you">
+          <picture class="picture-thank-you">
+            <img
+              src="./assets/images/illustration-thank-you.svg"
+              alt="" />
+          </picture>
+          <div class="chip">
+            <p>You selected <span id="rating-label">{n}</span> out of 5</p>
+          </div>
+          <h2 class="thank-you-card-title heading-large">Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
         </div>
-        <h2 class="thank-you-card-title heading-large">Thank you!</h2>
-        <p>
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
-        </p>
       </section>
     </main>
   </body>
